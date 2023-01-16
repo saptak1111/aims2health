@@ -1138,24 +1138,40 @@ body {
   height: 1px;
   margin: 24px 0;
 }
-.signin {
+.patient-signin, .doctor-signin {
   margin: 20px 0;
   padding-top: 10px 0;
 }
-.nav-tabs {
+.patient-signin.nav-tabs {
   border-bottom: 1px solid aquamarine;
 }
 
-.signin .nav-tabs, .signin .nav-item.show, .signin .nav-link, .signin .nav-tabs, .signin .nav-link.active {
+.patient-signin .nav-tabs, .patient-signin .nav-item.show, .patient-signin .nav-link, .patient-signin .nav-tabs {
   color: green;
   border: none;
   background: none;
 }
-.signin .nav-link.active {
+.patient-signin .nav-link.active {
   color: #333;
+  background: none;
   border-bottom: 2px solid green;
 }
+
+.doctor-signin.nav-tabs {
+  border-bottom: 1px solid hotpink;
 }
+
+.doctor-signin .nav-tabs, .doctor-signin .nav-item.show, .doctor-signin .nav-link, .doctor-signin .nav-tabs {
+  color: red;
+  border: none;
+  background: none;
+}
+.doctor-signin .nav-link.active {
+  color: #333;
+  background: none;
+  border-bottom: 2px solid red;
+}
+
 
 /* It's supposed to look like a tree diagram */
 .tree,

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" href="/favicon_patient.ico"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="theme-color" content="#000000"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <title>Patient | AIMS2Health</title>
+
+    <!-- awesone fonts css-->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- owl carousel css-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"  href="css/bootstrap.min.css" type="text/css">
+    <!-- Bootstrap Icons CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png" type="image/gif" sizes="16x16">
+</head>
+<body style="background-color: rgb(242, 248, 240); color: rgb(11, 40, 6);">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" class="pb-5">
+                    <img src="images/logo/aims2health-with-caption.png" height="40" alt="" loading="lazy">
+        </a> 
+
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="bi bi-question-circle-fill"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <div class="d-flex items-center">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    <i class="bi bi-person-circle"></i>
+                  </a>
+                  <div class="mt-2">Custom Name</div>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Link 1</a>
+                    <a class="dropdown-item" href="#">Link 2</a>
+                    <a class="dropdown-item" href="#">Link 3</a>
+                  </div>
+                </li>
+              </ul>
+
+          </div>
+    </div>
+</nav>
+
+<div class="sidebar">
+    <a href="#"><i class="bi bi-person-fill-add"></i> Add Patient</a>
+    <div class="divider"></div>
+    <a class="active" href="#home"><i class="bi bi-person-fill"></i> My Patient List</a>
+    <a href="#news"><i class="bi bi-calendar-check-fill"></i> Appointment</a>
+    <a href="#contact"><i class="bi bi-person-bounding-box"></i> Find Doctor</a>
+    <a href="#about"><i class="bi bi-credit-card-fill"></i> Payment</a>
+    <a href="#about"><i class="bi bi-file-earmark-spreadsheet-fill"></i> Imported Data</a>
+    <a href="#about"><i class="bi bi-person-lines-fill"></i> Task</a>
+
+    <div class="w-full w-100 position-absolute bottom-0 start-0 mb-5">
+        <a href="#about"><i class="bi bi-telephone-forward-fill"></i> Call Us</a>
+        <a href="#about"><i class="bi bi-question-diamond-fill"></i> Need Help</a>
+        <a href="#about"><i class="bi bi-person-badge"></i> User Profile</a>
+        <a href="#about"><i class="bi bi-box-arrow-right"></i> Logout</a>
+    </div>
+</div>
+
+<div class="content">
+    <!-- Nav tabs -->
+    <ul class="patient-signin nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#otp-signin1">My Patient List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#pass-signin1">Shared Patient List</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div id="otp-signin1" class="container tab-pane active"><br>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card bg-white">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some example text. Some example text.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card bg-white">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some example text. Some example text.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="pass-signin1" class="container tab-pane fade"><br>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card bg-white">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some example text. Some example text.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    .sidebar {
+      margin: 0px;
+      top: 50px;
+      padding-top: 20px;
+      width: 200px;
+      background-color: transparent;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+      border-right: 1px solid rgb(0, 230, 0);
+    }
+    .sidebar a {
+      display: block;
+      color: seagreen;
+      padding: 10px 15px;
+      text-decoration: none;
+    }     
+    .sidebar a.active {
+      color: darkgreen;
+      background-color: rgba(0, 230, 0, 0.1);
+    }
+    .sidebar a:hover:not(.active) {
+      background-color: rgba(0, 230, 0, 0.1);    
+    }
+    .divider {
+        width: 100%;
+        height: 1px;
+        background-color: rgb(0, 231, 0);
+    }
+    div.content {
+      margin-left: 200px;
+      padding: 100px;
+      height: 1000px;
+    }
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+</style>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</html>
